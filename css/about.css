@@ -1,0 +1,169 @@
+/*------------------------------------------------------------------
+[ ABOUT PAGE STYLES ]
+-------------------------------------------------------------------*/
+
+/* Mission Section */
+.mission-section {
+  min-height: calc(100dvh - 60px);
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.mission-content {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+}
+
+.mission-text {
+  padding: 2rem;
+}
+
+.mission-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.mission-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Vision Section */
+.vision-section {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.vision-content {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+}
+
+.vision-text {
+  padding: 2rem;
+}
+
+.vision-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.vision-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Values Section */
+.values-box {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-left: 4px solid #667eea;
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.values-list li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #555;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.values-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+/* Typography */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+  background-color: #667eea;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mission-section {
+    min-height: calc(100dvh - 50px);
+    padding: 1rem 0;
+  }
+  
+  .vision-section {
+    min-height: 100dvh;
+    padding: 1rem 0;
+  }
+  
+  .mission-content,
+  .vision-content {
+    flex-direction: column;
+  }
+  
+  .mission-text,
+  .vision-text,
+  .mission-image,
+  .vision-image {
+    padding: 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .mission-text,
+  .vision-text {
+    padding: 0.5rem;
+  }
+}
