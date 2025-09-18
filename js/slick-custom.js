@@ -164,6 +164,56 @@
                 },  
             });
         });
+
+        /*==================================================================
+        [ Featured Products Carousel ]*/
+        $('.featured-products-carousel').each(function(){
+            $(this).slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                speed: 800,
+                pauseOnHover: true,
+                pauseOnFocus: false,
+                arrows: true,
+                prevArrow:'<button class="slick-prev" type="button"></button>',
+                nextArrow:'<button class="slick-next" type="button"></button>',
+                dots: true,
+                dotsClass: 'slick-dots',
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            arrows: false
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px'
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                            centerMode: false,
+                            centerPadding: '0px'
+                        }
+                    }
+                ]
+            });
+        });
             
                 
 
